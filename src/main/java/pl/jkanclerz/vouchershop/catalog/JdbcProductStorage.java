@@ -14,8 +14,15 @@ public class JdbcProductStorage implements ProductStorage {
     }
 
     @Override
-    public void save(Product newProduct) {
-
+    public void save(Product product) {
+        jdbcTemplate.update("INSERT INTO `products_catalog__products` " +
+                        "(`id`, `description`, `picture`, `price`) values " +
+                        "(?,?,?,?)",
+                product.getId(),
+                product.getDescription(),
+                product.getPicture(),
+                product.getPrice()
+        );
     }
 
     @Override
