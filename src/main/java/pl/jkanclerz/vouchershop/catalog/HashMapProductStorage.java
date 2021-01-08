@@ -3,6 +3,7 @@ package pl.jkanclerz.vouchershop.catalog;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 
 public class HashMapProductStorage implements ProductStorage {
     private final HashMap<String, Product> products;

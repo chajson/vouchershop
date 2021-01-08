@@ -2,6 +2,7 @@ package pl.jkanclerz.vouchershop.catalog;
 
 
 import java.util.List;
+import java.util.Optional;
 
 public class JdbcProductStorage implements ProductStorage {
     @Override
