@@ -27,7 +27,13 @@ public class JdbcProductStorage implements ProductStorage {
 
     @Override
     public boolean isExists(String productId) {
-        return false;
+        int productsCount = jdbcTemplate.queryForObject(
+                "Select count(*) from `products_catalog__products` where id = ?",
+                new Object[]{productId},
+                Integer.class
+        );
+
+        return productsCount > 0;
     }
 
     @Override
