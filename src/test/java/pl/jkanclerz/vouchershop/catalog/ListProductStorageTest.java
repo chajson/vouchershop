@@ -7,6 +7,7 @@ import pl.jkanclerz.vouchershop.catalog.exceptions.NoSuchProductException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
+
 import static org.assertj.core.api.Assertions.*;
 
 public class ListProductStorageTest {
