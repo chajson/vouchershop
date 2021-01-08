@@ -8,7 +8,7 @@ public interface ProductStorage {
 
     boolean isExists(String productId);
 
-    Product load(String productId);
+    Optional<Product> load(String productId);
 
     List<Product> allProducts();
 }
