@@ -2,6 +2,7 @@ package pl.jkanclerz.vouchershop.catalog;
 
 
 import java.util.List;
+import java.util.Optional;
 
 public class JdbcProductStorage implements ProductStorage {
     @Override
@@ -15,7 +16,7 @@ public class JdbcProductStorage implements ProductStorage {
     }
 
     @Override
-    public Product load(String productId) {
+    public Optional<Product> load(String productId) {
         return null;
     }
 
