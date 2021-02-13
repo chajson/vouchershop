@@ -1,4 +1,4 @@
-package pl.jkanclerz.vouchershop;
+package pl.pchaja.vouchershop;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.SpringApplication;
